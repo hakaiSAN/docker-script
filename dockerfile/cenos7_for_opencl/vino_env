@@ -1,0 +1,8 @@
+PATH=/opt/intelFPGA_pro/17.1/qprogrammer/bin:$PATH
+DCP_LOC="/tmp/work/tools/inteldevstack"
+CL_CONTEXT_COMPILER_MODE_ALTERA=3
+CL_CONTEXT_COMPILER_MODE_INTELFPGA=3
+AOCL_BOARD_PACKAGE_ROOT="$DCP_LOC/opencl/opencl_bsp"
+OPAE_LOC="$DCP_LOC/sw/opae-0.13.1-1"
+ALTERAOCLSDKROOT="$DCP_LOC/intelFPGA_pro/"
+DLDT_DIR="/opt/intel/computer_vision_sdk_2018.1.xx"

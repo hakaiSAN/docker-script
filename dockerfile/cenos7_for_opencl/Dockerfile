@@ -31,8 +31,14 @@ RUN yum update -y
 RUN yum install -y \
   vim \
   wget \
+  yum-utils \
+  https://centos7.iuscommunity.org/ius-release.rpm \
+  python36u \
+  python36u-pip \
+  python36u-devel
 
 ####################################################################
 # Download with wget or curl
 ####################################################################
-
+RUN mkdir -p /tmp/work/download
+COPY download.sh /tmp/work/download
